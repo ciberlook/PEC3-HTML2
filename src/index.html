@@ -1,27 +1,138 @@
-<!DOCTYPE html>
+<!doctype html>
 
-<html>
+<html lang="es">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss"><!-- do not remove this line! -->
-    <title>UOC Boilerplate</title>
+    <meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width" >
+    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss" >
+    <!-- do not remove this line! -->
+    <title>
+      Asociación X: Actividades e información sobre la liga de tenis
+    </title>
+    <link rel="icon" type="image/svg" href="./assets/images/logo.svg" >
+    <link
+      rel="stylesheet"
+      href="../node_modules/@fortawesome/fontawesome-free/css/fontawesome.css"
+    >
+    <link
+      rel="stylesheet"
+      href="../node_modules/@fortawesome/fontawesome-free/css/brands.css"
+    >
+    <link
+      rel="stylesheet"
+      href="../node_modules/@fortawesome/fontawesome-free/css/solid.css"
+    >
   </head>
-  <body>
-    <div class="uoc-container">
-      <picture>
-        <source srcset="./assets/images/logo.png?as=webp&width=350" type="image/webp" />
-        <img src="./assets/images/logo.png?width=350" alt="Universitat Oberta de Catalunya" class="uoc-logo" />
-      </picture>
-      <h1 class="uoc-title">Hello, UOC!</h1>
-      <p>
-        This is a starter template for the Advanced HTML and CSS Tools courses
-        from the Master's Program in Multimedia Applications and the Master's
-        Program in Web App and Website Development at the Universitat Oberta de
-        Catalunya.
-      </p>
-    </div>
-    <include src="./views/footer.html"></include>
-    <script type="module" src="./assets/scripts/main.js"></script><!-- do not remove this line! -->
+
+  <body class="m-0 p-0">
+    <header class="flex justify-between w-3/4 mx-auto my-0">
+      <figure class="w-[100px] h-[100px] m-[0.5em] text-center">
+        <a href="./index.html"
+          ><img
+            class="w-full h-full filter invert-28 sepia-33 saturate-2694 hue-rotate-352 brightness-106"
+            src="./assets/images/logo.svg"
+            width="75"
+            height="75"
+            alt="logo del club de tenis"
+        ></a>
+      </figure>
+      <nav id="sandwich" class="flex items-center ">
+        <button class="w-[50px] h-[50px] z-[99] bg-[#0000] cursor-pointer m-0 p-0 border-[none] md:hidden ">
+          <span class="sandwich__bar"></span>
+          <span class="sandwich__bar"></span>
+          <span class="sandwich__bar"></span>
+        </button>
+        <ul id="menu" class="hidden flex justify-center text-center m-0 left-0 top-0 block absolute flex-col bg-[#d2d6ced3] backdrop-blur-[5px] w-full h-full md:flex-row md:static md:bg-transparent md:z-[98] md:backdrop-blur-0 md:items-center md:flex">
+          <li class="m-[1em] ">
+            <a
+              class="text-[#a45120] text-4xl underline md:text-base"
+              href="./index.html"
+              >Inicio</a
+            >
+          </li>
+          <li class="m-[1em] ">
+            <a
+              class="text-[#a45120] text-4xl  md:text-base"
+              href="./participantes.html"
+              >Participantes</a
+            >
+          </li>
+          <li class="m-[1em] ">
+            <a
+              class="text-[#a45120] text-4xl  md:text-base"
+              href="#"
+              >Actividades</a
+            >
+          </li>
+          <li class="m-[1em] ">
+            <a
+              class="text-[#a45120] text-4xl md:text-base"
+              href="#"
+              >Contacto</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="absolute z-[-1] w-screen h-[75vh] bg-[url(../images/tennis-1381230\_1280\_1.jpg)] flex flex-col justify-center text-center bg-cover bg-center left-0 top-0">
+      <div class="max-w-[75%] mx-auto my-0">
+        <h1 class="text-7xl text-white font-light mb-[.5] mt-0">El tenis, es tu pasión</h1>
+        <p class="text-white font-light text-2xl mb-4">
+          Visita nuestra web. Encontrarás gente que comparta tu pasión por el
+          tenis y acceso a las últimas noticas.
+        </p>
+        <p class="text-white font-light text-2xl mb-4">
+          <span class="bg-[#d1d1dd9e] backdrop-blur-[1px] rounded-[10px] p-2"
+            ><a class="text-[#a45120] underline underline-offset-4" href="./participantes.html"
+              >Ver Participantes</a
+            ></span
+          >
+        </p>
+      </div>
+    </main>
+    <footer class="absolute -translate-x-2/4 left-2/4 bottom-0 w-3/4 mx-auto">
+      <div class="flex flex-wrap justify-between items-center mx-auto pt-[1em] w-full border-t-[1px] border-solid border-gray-200">
+        <p>
+          <span class="fa-regular fa-copyright" title="copyright"></span> |
+          Alberto Marín Mendoza
+        </p>
+        <ul class="flex mt-0 mb-1 pl-2 gap-[.6em]">
+          <li>
+            <a href="#" title="Facebook"
+              ><span class="fa-brands fa-facebook-f text-[#a45120]"></span><span></span
+            ></a>
+          </li>
+          <li>
+            <a href="#" title="Instagram"
+              ><span class="fa-brands fa-instagram text-[#a45120]"></span><span></span
+            ></a>
+          </li>
+          <li>
+            <a href="#" title="Twitter"
+              ><span class="fa-brands fa-x-twitter text-[#a45120]"></span><span></span
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div class="flex flex-wrap justify-between items-center mx-auto pt-[1em] w-full">
+        <figure class="mb-4">
+          <a href="#"
+            ><img
+              src="./assets/images/logo.svg"
+              width="75"
+              height="75"
+              alt="logo del club de tenis"
+          ></a>
+        </figure>
+        <ul class="flex mt-0 mb-[1em] pl-2 gap-[.6em]">
+          <li class="text-[#a45120] underline"><a href="#">Política de privacidad</a></li>
+          <li class="text-[#a45120] underline"><a href="#">Términos legales</a></li>
+          <li class="text-[#a45120] underline"><a href="#">Sobre nosotros</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script type="module" src="./assets/scripts/main.js"></script>
+    <!-- do not remove this line! -->
   </body>
 </html>
