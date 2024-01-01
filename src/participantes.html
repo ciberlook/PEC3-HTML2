@@ -43,14 +43,14 @@
         <ul id="menu" class="hidden flex justify-center text-center m-0 left-0 top-0 block absolute flex-col bg-[#d2d6ced3] backdrop-blur-[5px] w-full h-full md:flex-row md:static md:bg-transparent md:z-[98] md:backdrop-blur-0 md:items-center md:flex">
           <li class="m-[1em] ">
             <a
-              class="text-[#a45120] text-4xl underline md:text-base"
+              class="text-[#a45120] text-4xl  md:text-base"
               href="./index.html"
               >Inicio</a
             >
           </li>
           <li class="m-[1em] ">
             <a
-              class="text-[#a45120] text-4xl  md:text-base"
+              class="text-[#a45120] text-4xl underline md:text-base"
               href="./participantes.html"
               >Participantes</a
             >
@@ -91,9 +91,9 @@
               >
             </a>
             <a class="link-underline link-underline-opacity-0" href="#">
-              <h2 class="h2">Alberto Marín</h2>
+              <h2 class="hover:text-blue-800 text-[#a45120] font-sans text-2xl leading-10">Alberto Marín</h2>
             </a>
-            <p>
+            <p class="text-base font-normal font-sans">
               Disponible todas las semanas de lunes a Viernes. Entre muy duro,
               pero es ideal para principiantes. Si te interesa contactar con él
               no dudes en escribirle.
@@ -112,9 +112,9 @@
               >
             </a>
             <a class="link-underline link-underline-opacity-0" href="#">
-              <h2 class="h2">Lucía Durango</h2>
+              <h2 class="hover:text-blue-800 text-[#a45120] font-sans text-2xl">Lucía Durango</h2>
             </a>
-            <p>
+            <p class="text-base font-normal font-sans">
               Ideal para animar a los equipos. Su caracter jovial y divertido
               hacen del tenis una experiencia inolvidable. Deporte no siempre es
               esfuerzo, también es diversión. Animate y contacta con ella si te
@@ -134,9 +134,9 @@
               >
             </a>
             <a class="link-underline link-underline-opacity-0" href="#">
-              <h2 class="h2">David Blanco</h2>
+              <h2 class="hover:text-blue-800 text-[#a45120] font-sans text-2xl">David Blanco</h2>
             </a>
-            <p>
+            <p class="text-base font-normal font-sans">
               No suele aparecer mucho por las gradas, pero no pasa desapercibido
               cuando lo hace. Si te interesa aprender, este es tu chico. Anímate
               y entra para ver su perfil, seguro que te interesa.
@@ -157,9 +157,9 @@
               >
             </a>
             <a class="link-underline link-underline-opacity-0" href="#">
-              <h2 class="h2">Antonio Romero</h2>
+              <h2 class="hover:text-blue-800 text-[#a45120] font-sans text-2xl">Antonio Romero</h2>
             </a>
-            <p>
+            <p class="text-base font-normal font-sans">
               Años de experiencia y seriedad definen a Antonio. Mira su perfil y
               veras que le precede un curriculum muy valioso.
             </p>
@@ -177,9 +177,9 @@
               >
             </a>
             <a class="link-underline link-underline-opacity-0" href="#">
-              <h2 class="h2">Candida Gomez</h2>
+              <h2 class="hover:text-blue-800 text-[#a45120] font-sans text-2xl">Candida Gomez</h2>
             </a>
-            <p>
+            <p class="text-base font-normal font-sans">
               Acaba de empezar y ya está batiendo records. Tiene mucho talento
               en los saques y ya empeiza a ser temible por muchos jugadores.
             </p>
@@ -197,9 +197,9 @@
               >
             </a>
             <a class="link-underline link-underline-opacity-0" href="#">
-              <h2 class="h2">Manolo Urtado</h2>
+              <h2 class="hover:text-blue-800 text-[#a45120] font-sans text-2xl">Manolo Urtado</h2>
             </a>
-            <p>
+            <p class="text-base font-normal font-sans">
               Es amateur pero te da lecciones de juego muy importantes. Si estás
               empezando y no quieres arriesgar este es tu perfil. Entra y
               contacta con él.
@@ -208,33 +208,33 @@
         </li>
       </ul>
     </main>
-    <footer class="footer">
-      <div>
+    <footer class=" w-3/4 mx-auto">
+      <div class="flex flex-wrap justify-between items-center mx-auto pt-[1em] w-full border-t-[1px] border-solid border-gray-200">
         <p>
           <span class="fa-regular fa-copyright" title="copyright"></span> |
           Alberto Marín Mendoza
         </p>
-        <ul class="menu menu--gap">
+        <ul class="flex mt-0 mb-1 pl-2 gap-[.6em]">
           <li>
             <a href="#" title="Facebook"
-              ><span class="fa-brands fa-facebook-f"></span><span></span
+              ><span class="fa-brands fa-facebook-f text-[#a45120] hover:text-blue-800"></span><span></span
             ></a>
           </li>
           <li>
             <a href="#" title="Instagram"
-              ><span class="fa-brands fa-instagram"></span><span></span
+              ><span class="fa-brands fa-instagram text-[#a45120] hover:text-blue-800"></span><span></span
             ></a>
           </li>
           <li>
             <a href="#" title="Twitter"
-              ><span class="fa-brands fa-x-twitter"></span><span></span
+              ><span class="fa-brands fa-x-twitter text-[#a45120] hover:text-blue-800"></span><span></span
             ></a>
           </li>
         </ul>
       </div>
-      <div>
-        <figure>
-          <a href=""
+      <div class="flex flex-wrap justify-between items-center mx-auto pt-[1em] w-full">
+        <figure class="mb-4">
+          <a href="#"
             ><img
               src="./assets/images/logo.svg"
               width="75"
@@ -242,11 +242,10 @@
               alt="logo del club de tenis"
           ></a>
         </figure>
-
-        <ul class="menu">
-          <li class="menu__item"><a href="#">Política de privacidad</a></li>
-          <li class="menu__item"><a href="#">Términos legales</a></li>
-          <li class="menu__item"><a href="#">Sobre nosotros</a></li>
+        <ul class="flex mt-0 mb-[1em] pl-2 gap-[.6em]">
+          <li class="text-[#a45120] underline"><a class="hover:text-blue-800" href="#">Política de privacidad</a></li>
+          <li class="text-[#a45120] underline"><a class="hover:text-blue-800" href="#">Términos legales</a></li>
+          <li class="text-[#a45120] underline"><a class="hover:text-blue-800" href="#">Sobre nosotros</a></li>
         </ul>
       </div>
     </footer>

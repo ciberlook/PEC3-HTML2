@@ -20,7 +20,13 @@ module.exports = {
       },
       saturate:{
         '2694': '26.94',
-      }
+      },
+      fontFamily:{
+        sans: ['"Helvetica Neue"','sans-serif'],
+        mono: ['SFMono-Regular','Menlo','Monaco','Consolas','"Liberation Mono"','"Courier New"','monospace'],
+        display: ['Roboto','sans-serif'],
+          
+      },
     },
   },
   plugins: [],
