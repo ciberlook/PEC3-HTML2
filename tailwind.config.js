@@ -4,22 +4,22 @@ module.exports = {
   theme: {
     extend: {
       invert:{
-        '28': '.28',
+        28: '.28',
       },
       sepia:{
-        '33': '.33',
+        33: '.33',
       },
       brightness:{
-        '106': '1.06',
+        106: '1.06',
       },
       contrast:{
-        '82': '.82',
+        82: '.82',
       },
       hueRotate:{
-        '352': '352deg',
+        352: '352deg',
       },
       saturate:{
-        '2694': '26.94',
+        2694: '26.94',
       },
       fontFamily:{
         sans: ['"Helvetica Neue"','sans-serif'],
@@ -27,8 +27,11 @@ module.exports = {
         display: ['Roboto','sans-serif'],
           
       },
+      colors: {
+        'orange':'#a45120'
+      }
     },
   },
-  plugins: [],
+  plugins: []
 }
 

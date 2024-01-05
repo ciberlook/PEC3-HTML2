@@ -3,7 +3,8 @@
     @apply block w-10 h-[5px] bg-[#fff] transition-[0.4s] mx-[5px] my-1.5;
   }
   .logo {
-    filter: invert(28%) sepia(33%) saturate(2694%) hue-rotate(352deg)
-      brightness(106%) contrast(82%);
+    /*@apply invert-28 sepia-33 brightness-106 contrast-82 saturate-2694 hue-rotate-352*/
+    @apply fill-orange
+    
   }
 }
